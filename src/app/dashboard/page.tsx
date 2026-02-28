@@ -10,7 +10,7 @@ import { getDeals } from "@/lib/data/pipeline";
 import { calculateMonthlyRevenue, getCurrentMonthRevenue } from "@/lib/revenue";
 import type { EngineerStatus } from "@/lib/data/types";
 
-export const revalidate = 300; // ISR 5分
+export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
   const [engineers, contracts, projects, deals] = await Promise.all([

@@ -11,7 +11,7 @@ import {
   getCurrentMonthRevenue,
 } from "@/lib/revenue";
 
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 export default async function RevenuePage() {
   const [contracts, projects] = await Promise.all([

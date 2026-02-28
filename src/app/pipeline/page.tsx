@@ -5,7 +5,7 @@ import { SalesPerformance } from "@/components/pipeline/sales-performance";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getDeals } from "@/lib/data/pipeline";
 
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 export default async function PipelinePage() {
   const deals = await getDeals();

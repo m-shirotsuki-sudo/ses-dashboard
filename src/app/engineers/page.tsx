@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getEngineers } from "@/lib/data/engineers";
 import { getProjects } from "@/lib/data/projects";
 
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 export default async function EngineersPage() {
   const [engineers, projects] = await Promise.all([
